@@ -188,7 +188,7 @@ body{
 
 .cabecalho {
     background-color: white;
-    padding-bottom: 1;
+    padding-bottom: 1em;
 }
 
 .cabecalho__menu__link {
@@ -236,6 +236,22 @@ body{
     font-weight: 500;
 }
 
+@media screen and (max-width: 500px) {
+    .cabecalho__menu__link {
+        text-decoration: none;
+        border-radius: 18px;
+        box-shadow: -1px 3px 4px #845800;
+        transition: 200ms;
+        
+    }
+    .cabecalho__menu__link:active {
+        box-shadow: none;
+        transform: translateY(3px);
+        transition: none;
+        text-decoration: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .cabecalho {
         padding: 5% 12%;
@@ -278,5 +294,19 @@ body{
 
     .apresentacao__imagem-curriculo {
         width: 64%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cabecalho__menu__link:hover {
+        text-decoration: none;
+        border-radius: 18px;
+        box-shadow: -1px 3px 4px #845800;
+        transition: 200ms;
+    }
+    .cabecalho__menu__link:active {
+        box-shadow: none;
+        transform: translateY(3px);
+        transition: none;
     }
 }
